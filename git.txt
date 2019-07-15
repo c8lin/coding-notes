@@ -1,0 +1,4 @@
+- error: refusing to merge unrelated histories 
+    - use case: initializing a git repo with changes (ie README) with an already existing local project
+    - fix: git pull origin master --allow-unrelated-histories OR just leave out the README so remote is EMPTY
+    - note: git doesn't allow this merge to prevent accidentally merging two unrelated projects  
